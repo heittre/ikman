@@ -21,4 +21,4 @@ This is an Express.js application that uses Puppeteer and `@sparticuz/chromium-m
 To install the required dependencies, run the following command in the project directory:
 
 ```bash
-npm install express puppeteer-core @sparticuz/chromium-min
+npm install 
