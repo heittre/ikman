@@ -46,7 +46,7 @@ router.get("/search", async (req, res) => {
     const page = await browser.newPage();
     //   await page.goto(`https://ikman.lk/en/ads?query=${query}`);
 
-    await page.goto(`https://ikman.lk/`);
+    await page.goto(`https://ikman.lk/`);   
     const url = await page.url();
     const html = await page.content();
     console.log(url);
