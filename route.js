@@ -7,13 +7,7 @@ chromium.setHeadlessMode = true;
 
 chromium.setGraphicsMode = false;
 
-// router.get("/search", (req, res) => {
-//   const keyword = req.query.keyword;
-// });
 
-// Define a basic route
-
-//   res.send("Hello, World!");
 
 router.get("/search", async (req, res) => {
   const keyword = req.query.keyword;
@@ -50,10 +44,7 @@ router.get("/search", async (req, res) => {
     const url = await page.url();
     const html = await page.content();
     console.log(url);
-    //   await page.evaluate(() => {
-    //     const searchInput = document.querySelector('.search-input--PtfH8');
-    //     searchInput.value = 'mobile';
-    //   });
+ 
 
     await page.waitForSelector(".search-form--mexm- .search-input--PtfH8", {
       timeout: 60000,
