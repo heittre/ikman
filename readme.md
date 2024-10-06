@@ -22,3 +22,7 @@ To install the required dependencies, run the following command in the project d
 
 ```bash
 npm install 
+```
+
+### Endpoints
+- https://localhost:{PORT}/search?keyword={KEYWORD}
